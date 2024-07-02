@@ -45,3 +45,8 @@ test = true;
 console.log("Datentyp:" + typeof test);
 console.log("Inhalt:" +test);
 console.log("----------");
+
+// Variabelen vs Konstanten in JS
+ const test2 = "Hi!";
+ console.log("Inhalt: " + test2);
+ 
