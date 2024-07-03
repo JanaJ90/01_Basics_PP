@@ -32,9 +32,16 @@ ageJohn = year - birthYearJohn;
 ageMark = year - birthYearMark;
 
 
-
-
 // Ausgabe
 console.log("ageJohn: " + ageJohn);
 console.log("ageMark: " + ageMark);
+
+// Deklaration
+
+let isJohnOlder;
+isJohnOlder = (ageJohn > ageMark);
+let isJohnEqual = ( ageJohn == ageMark);
+
+console.log("isJohnOlder:" + isJohnOlder);
+console.log("isJohnEqual:" + isJohnEqual);
 
