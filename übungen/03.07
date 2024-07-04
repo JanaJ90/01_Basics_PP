@@ -14,11 +14,12 @@ function getInputAndPrintMessenge(){
     }else if (age >=13 && age <=17)  {
         Getränk ="Cola";
 
-    }else if (age >=18 &&) {
-    Getränk ="Wein";}
+    }else if (age >=18) {
+    Getränk ="Wein";
     }else {
 console.log("Ungültiges Alter eingegebn");
 return;
 }
-console.log(´${name} trinkt ${Getränk}.´);
+console.log("${name} trinkt ${Getränk}.");
 }
+getInputAndPrintMessenge();
