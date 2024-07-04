@@ -17,11 +17,7 @@
 ausgabeNamen();
 //Funktion
 function ausgabeNamen() {
-    
+       // interne Variable
     let firstName = "Jana";
     console.log("Hallo, " + firstName + "!");
-    console.log("Hallo, Sara!");
-    console.log("Hallo, Tomi!");
-
-
-}
+    
