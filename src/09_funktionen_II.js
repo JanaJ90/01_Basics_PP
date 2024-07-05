@@ -23,8 +23,12 @@ output(divide(0,0));
 
 function divide(a,b) {
 
+	if (b == 0) {
+		return ERROR_STR_DIV;  // Ausname
+	}
+	return  a / b;  // Regel
 	if (b !=0) {
-		return  a / b;
+		
 	} else {
 		return ERROR_STR_DIV;
 	}
