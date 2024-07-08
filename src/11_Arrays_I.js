@@ -22,12 +22,24 @@
 /* For -Schleifen als allg. Wiederholungs-Struktur */
 
   // Inkrement ( untere Grenze--> obere Grenze)
-  
-for (let i = 10; i < 50; i++) // i--> schleifen-Index
+
+// for (let i = 10; i < 50; i++) // i--> schleifen-Index
+// {
+//     output (i);
+// }
+ 
+// Dekrement (obere Grewnze --> untere Grenze)
+for (let i = 10; i > 0; i--) // i--> schleifen-Index
 {
     output (i);
 }
- 
+
+// Inkrement (var. Schrittweite)
+ for (let i = 10; i <= 100; i += 5) 
+{
+   output(i);   
+}
+
 
 /**
  *   PRAXIS
