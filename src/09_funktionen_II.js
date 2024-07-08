@@ -64,7 +64,7 @@ function calculator(a,b,op) {   //* WAS soll gemacht werden? *//
 		
 		
 		default:
-			return ERROR_STR_GEN;
+			return ERROR_STR_GEN ;
 			
 	}
 }
