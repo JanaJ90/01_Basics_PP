@@ -173,18 +173,39 @@ function getSentenceArr2(arr)
     const GAP = " ";
     const PUNCT = ".";
     let str= "";
-    // 1. Iteration: Struktur GENAU erzeugen
-    for (let i = 0; i < arr.length; i++) 
- {
-    if (i != arr.length -1) {
-        str +=arr[i] + GAP; // entweder
-    } else {
-        str +=arr[i] + PUNCT; // oder
-    }
-    // str +=arr[i] + GAP;
-         //output (str);
-        // str +=arr[i] + PUNCT;
-        }
-     return str;
-}
 
+
+    // 1. Iteration: Struktur GENAU erzeugen
+//     for (let i = 0; i < arr.length; i++) 
+//  {
+//     if (i != arr.length -1) {
+//         str +=arr[i] + GAP; // entweder
+//     } else {
+//         str +=arr[i] + PUNCT; // oder
+//     }
+//     // str +=arr[i] + GAP;
+//          //output (str);
+//         // str +=arr[i] + PUNCT;
+//         }
+//      return str;
+// }
+//}
+
+
+// 2. Iteration: Struktur erzeugen und trimmen()
+
+// for (let i = 0; i < arr.length; i++) 
+// {   str +=arr[i] + GAP;
+// }
+// return str.trim() + PUNCT;
+
+
+// 3. Iteration:  Ausnutzen von generischen Fuktionen ...
+   
+return arr.join(GAP) + PUNCT;
+
+for (let i = 0; i < arr.length; i++) 
+{   str +=arr[i] + GAP;
+}
+return str.trim() + PUNCT;
+}
