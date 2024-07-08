@@ -18,8 +18,16 @@
 // output(arr[4]);
 // output(arr[arr.length-1]); // Letzte Position / allgemein
 
+/*********  02a. Theorie: Schleifen (for-schleife) */
+/* For -Schleifen als allg. Wiederholungs-Struktur */
 
-
+  // Inkrement ( untere Grenze--> obere Grenze)
+  
+for (let i = 10; i < 50; i++) // i--> schleifen-Index
+{
+    output (i);
+}
+ 
 
 /**
  *   PRAXIS
@@ -64,19 +72,19 @@ function output(outputStr) {
 
 
 
-output(getSentenceArr(["Ich","bin","Max","Mütze"]));
-function getSentenceArr(arr)
- {
-    const GAP = " ";
-    const PUNCT = ".";
-    let str = arr [0] + GAP +
-    arr [1] + GAP +
-    arr [2] + GAP +
-    arr [3] + GAP +
-    arr [4] + GAP +
-    arr [5] + 
-                PUNCT;
+// output(getSentenceArr(["Ich","bin","Max","Mütze"]));
+// function getSentenceArr(arr)
+//  {
+//     const GAP = " ";
+//     const PUNCT = ".";
+//     let str = arr [0] + GAP +
+//     arr [1] + GAP +
+//     arr [2] + GAP +
+//     arr [3] + GAP +
+//     arr [4] + GAP +
+//     arr [5] + 
+//                 PUNCT;
 
-    return str;
-}
+//     return str;
+// }
 
