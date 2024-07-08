@@ -10,11 +10,11 @@ Solange die Variable existiert, bleibt dieser erhalten
 hier: Verkettung eines Strings // Transponierung
 */
 
-let str = ""; // Anfangswert
-for (let i = 0; i < 10; i++) {
-   str += "Test" + " "; // a = a + 1
-   output(str);
-}
+// let str = ""; // Anfangswert
+// for (let i = 0; i < 10; i++) {
+//    str += "Test" + " "; // a = a + 1
+//    output(str);
+// }
 
 
 
@@ -41,12 +41,12 @@ hier: Aufsummierung
 /* Besser: mit FOR-Schleife */
 
 let a = 0; // Anfangswert
-for (let i = 0; i < 10; i++)
-{
-   a += 1; 
-   a = a + 1
-   output("inhalt von a: " + a);
-}
+// for (let i = 0; i < 10; i++)
+// {
+//    a += 1; 
+//    a = a + 1
+//    output("inhalt von a: " + a);
+// }
 
 
 
@@ -75,10 +75,10 @@ for (let i = 0; i < 10; i++)
 
   // Inkrement ( untere Grenze--> obere Grenze)
 
-for (let i = 10; i < 50; i++) // i--> schleifen-Index
-{
-    output (i);
-}
+// for (let i = 10; i < 50; i++) // i--> schleifen-Index
+// {
+//     output (i);
+// }
  
 // // Dekrement (obere Grewnze --> untere Grenze)//
 // for (let i = 10; i > 0; i--) // i--> schleifen-Index
@@ -166,16 +166,25 @@ function getSentenceArr(arr)
 // Transponierung:  untereinander ---> nebeneinander
 // Helge Schneider: Anananandereihung ...
 
-//  output(getSentenceArr2(["Ich","bin","Max","Mütze"]));
-// function getSentenceArr2(arr)
-//  {
-//     const GAP = " ";
-//     const PUNCT = ".";
-//     let str;
-    
-//     for (let i = 0; i < arr.length; i++) 
-//         {
-//          output(arr[i]);  // Mapping intern-->extern
-//         }
-//      return str;
-// }
+
+  output(getSentenceArr2(["Ich","bin","Max","Mütze"]));
+function getSentenceArr2(arr)
+ {
+    const GAP = " ";
+    const PUNCT = ".";
+    let str= "";
+    // 1. Iteration: Struktur GENAU erzeugen
+    for (let i = 0; i < arr.length; i++) 
+ {
+    if (i != arr.length -1) {
+        str +=arr[i] + GAP; // entweder
+    } else {
+        str +=arr[i] + PUNCT; // oder
+    }
+    // str +=arr[i] + GAP;
+         //output (str);
+        // str +=arr[i] + PUNCT;
+        }
+     return str;
+}
+
