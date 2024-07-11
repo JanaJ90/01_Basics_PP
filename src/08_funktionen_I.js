@@ -57,14 +57,15 @@
 //     console.log(outputStr);
 // }
 
-// /******Funktionen 3b.******/
-// //1. Funktionalität: string composing
-// output(getString("Max", "Mütze"));
-// function (firstName, familyName); {
-//     const GAP = " ";
-//     let outputStr = " Hallo, " + firstName + GAP + familyName + "!";
-//     return outputStr;    
-// }
+/******Funktionen 3b.******/
+//1. Funktionalität: string composing
+output(getString("Max", "Mütze"));
+function getString (firstName, familyName); {
+    const GAP = " ";
+    let outputStr = " Hallo, " + firstName + GAP + familyName + "!";
+    return outputStr;  
+    console.log ("Hi");  
+}
 
 // //2. Funktionalität string output
 // output("Hi");
